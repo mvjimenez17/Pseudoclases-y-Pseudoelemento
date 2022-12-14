@@ -1,0 +1,145 @@
+:root{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.enlace{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    background: tomato;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 3px solid #ebd1db;
+
+}
+
+.enlace:link{
+
+    color: black;
+    background: burlywood;
+
+}
+
+.enlace:visited{
+    background: crimson;
+}
+
+.enlace:hover{
+    text-decoration: underline;
+    padding: 40px 20px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.enlace:active{
+    background: steelblue;
+    color: white;
+}
+
+.event{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: crimson;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+.event:active{
+    padding: 20px;
+}
+#objetivo{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: steelblue;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#objetivo:target{
+    margin-left: 150px;
+}
+
+.form{
+    width: 80%;
+    margin: 0 auto;
+    background: #f2f2f2;
+    box-shadow: 0 0 5px rgba(red, green, blue, .5);
+    padding: 30px;
+}
+
+.form:focus-within{
+    background: darkcyan;
+}
+
+.form__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input{
+    display: block;
+}
+
+input[type= "text"],
+input[type= "email"]{
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px ;
+    border: none;
+    outline: none;
+}
+
+
+input[type= "checkbox"]{
+    display: inline-block;
+}
+
+input:focus{
+    background: rgba(220, 20, 60, 0.553);
+}
+
+h2:focus{
+    background: aquamarine;
+    color: coral;
+}
+
+input[type="checkbox"]:checked+label{
+    background: hotpink;
+    color: white;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'arial';
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3:not(.title):not(:hover){
+    color: darkorchid;
+}
+
+h3:not(:hover){
+    text-decoration: line-through;
+}
+
