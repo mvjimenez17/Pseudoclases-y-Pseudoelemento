@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: salmon;
+    font-family: 'arial';
+
+}
+
+.card{
+    width: 300px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: -20px -20px 0 0 #fb968b;
+}
+
+.card__title{
+    border-bottom: 3px solid salmon;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p::selection{
+    background: steelblue;
+    color: white;
+
+}
+
+h2::selection{
+    background: aqua;
+    color: blue;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
+}
+
+p::first-line{
+    color: brown;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card__title::first-letter{
+ font-size: 2rem;
+ line-height: 3rem;
+ letter-spacing: 20px;
+}
+
+input[type="text"]{
+    margin-left: 20px;
+    padding: 15px 3px;
+    background: crimson;
+    color: #fff;
+    border: none;
+    border-bottom: 4px solid #fff;
+    outline: none;
+}
+
+input[type="text"]::placeholder{
+    color: white;
+}
+
+/* ::before  antes y ::after despues */
+
+.card__text::before{
+    content: " HOLA ";
+
+}
+
+.card__text::after{
+    content: "CHAO...";
+
+}
+
+.card__title::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: salmon;
+}
+.card__title::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: salmon;
+}
+
+ul{
+    counter-reset: contador;
+}
+
+li{
+    list-style: none;
+    padding: 0;
+}
+
+li::before{
+    content: counter(contador);
+    counter-increment: contador;
+    display: inline-block;
+    background: #fb968b;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    margin-right: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
